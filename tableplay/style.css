@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #18684d;
+    border-bottom: 1px solid #dddddd; 
+    padding: 12px;
+}
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    box-shadow:0 0 20px #00000026;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer; 
+}
+.content-table tbody tr:hover{
+    opacity: 0.7;
+    transform: scale(0.98);
+}
+.content-table thead tr{
+    background-color: #18684d;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+    transition: all 0.5s ease-in-out;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid  #18684d;
+}
+img {
+    width: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    float: left;
+    margin-right: 10px;
+}
+.username {
+    font-weight: bold;
+    padding: 5px;
+    color: pink;
+}
+a:hover {
+    color: #ff0000;
+}
+a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
