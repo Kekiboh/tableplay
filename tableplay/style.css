@@ -1,3 +1,11 @@
+@media(max-width: 768px) {
+  main.grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+  }
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,7 +19,7 @@ h1{
     margin: 25px 0;
     font-size: 0.9em;
     min-width: 400px;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
     overflow: hidden;
     box-shadow:0 0 20px #00000026;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,20 +51,51 @@ h1{
 }
 img {
     width: 100px;
+    height: 110px;
+
     border-radius: 50px;
-    object-fit: cover;
-    float: left;
     margin-right: 10px;
 }
 .username {
     font-weight: bold;
-    padding: 5px;
+    padding: 2px;
+    padding-bottom: 0px;
     color: pink;
 }
 a:hover {
-    color: #ff0000;
+   background-color: #ff0000;
 }
 a {
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 5px;
+    margin: 0px 5px;
+    background-color: rgb(75, 61, 163);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.grid {
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+
+    transition: all 0.5s ease-in-out;
+}
+.card:nth-of-type(even) {
+    background-color: rgb(102, 110, 119);
+}
+.card:hover {
+    transform: scale(0.98);
+    opacity: 90%;
+
 }
